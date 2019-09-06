@@ -1,0 +1,122 @@
+Configuration	Battery_e-load
+STM32CubeMX 	5.3.0
+Date	08/14/2019
+MCU	STM32G431K8Tx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC1	IN1 Single-ended	ADC1_IN1	PA0
+ADC1	IN2 Single-ended	ADC1_IN2	PA1
+ADC1	IN3 Single-ended	ADC1_IN3	PA2
+ADC1	IN4 Single-ended	ADC1_IN4	PA3
+ADC1	IN10 Single-ended	ADC1_IN10	PF0-OSC_IN
+ADC1	IN15 Single-ended	ADC1_IN15	PB0
+ADC1	Vbat Channel	ADC1_Vbat_Input	VP_ADC1_Vbat_Input
+ADC2	IN4 Single-ended	ADC2_IN4	PA7
+ADC2	IN10 Single-ended	ADC2_IN10	PF1-OSC_OUT
+CORDIC	Activated	CORDIC_VS_CORDIC	VP_CORDIC_VS_CORDIC
+DAC1	Connected to external pin only	DAC1_OUT1	PA4
+I2C1	I2C	I2C1_SCL	PA15
+I2C1	I2C	I2C1_SDA	PB7
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+SYS	Dead Battery Signals disabled	SYS_VS_DBSignals	VP_SYS_VS_DBSignals
+TIM1	PWM Generation CH3	TIM1_CH3	PA10
+TIM2	PWM Generation CH3	TIM2_CH3	PA9
+USB	Device (FS)	USB_DM	PA11
+USB	Device (FS)	USB_DP	PA12
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+2	PF0-OSC_IN	ADC1_IN10	Vcell5
+3	PF1-OSC_OUT	ADC2_IN10	Vimeas
+5	PA0	ADC1_IN1	Vcell1
+6	PA1	ADC1_IN2	Vcell2
+7	PA2	ADC1_IN3	Vcell3
+8	PA3	ADC1_IN4	Vcell4
+9	PA4	DAC1_OUT1	ISet
+12	PA7	ADC2_IN4	VBat
+13	PB0	ADC1_IN15	Vcell6
+19	PA9	TIM2_CH3	FAN CMD
+20	PA10	TIM1_CH3	Status_LED
+21	PA11	USB_DM	
+22	PA12	USB_DP	
+23	PA13	SYS_JTMS-SWDIO	
+24	PA14	SYS_JTCK-SWCLK	
+25	PA15	I2C1_SCL	
+26	PB3*	SYS_JTDO-SWO	
+30	PB7	I2C1_SDA	
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC1	IN1 Single-ended	ADC1_IN1	PA0
+ADC1	IN2 Single-ended	ADC1_IN2	PA1
+ADC1	IN3 Single-ended	ADC1_IN3	PA2
+ADC1	IN4 Single-ended	ADC1_IN4	PA3
+ADC1	IN10 Single-ended	ADC1_IN10	PF0-OSC_IN
+ADC1	IN15 Single-ended	ADC1_IN15	PB0
+ADC1	Vbat Channel	ADC1_Vbat_Input	VP_ADC1_Vbat_Input
+ADC2	IN4 Single-ended	ADC2_IN4	PA7
+ADC2	IN10 Single-ended	ADC2_IN10	PF1-OSC_OUT
+CORDIC	Activated	CORDIC_VS_CORDIC	VP_CORDIC_VS_CORDIC
+DAC1	Connected to external pin only	DAC1_OUT1	PA4
+I2C1	I2C	I2C1_SCL	PA15
+I2C1	I2C	I2C1_SDA	PB7
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+SYS	Dead Battery Signals disabled	SYS_VS_DBSignals	VP_SYS_VS_DBSignals
+TIM1	PWM Generation CH3	TIM1_CH3	PA10
+TIM2	PWM Generation CH3	TIM2_CH3	PA9
+USB	Device (FS)	USB_DM	PA11
+USB	Device (FS)	USB_DP	PA12
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+2	PF0-OSC_IN	ADC1_IN10	Vcell5
+3	PF1-OSC_OUT	ADC2_IN10	Vimeas
+5	PA0	ADC1_IN1	Vcell1
+6	PA1	ADC1_IN2	Vcell2
+7	PA2	ADC1_IN3	Vcell3
+8	PA3	ADC1_IN4	Vcell4
+9	PA4	DAC1_OUT1	ISet
+12	PA7	ADC2_IN4	VBat
+13	PB0	ADC1_IN15	Vcell6
+19	PA9	TIM2_CH3	FAN CMD
+20	PA10	TIM1_CH3	Status_LED
+21	PA11	USB_DM	
+22	PA12	USB_DP	
+23	PA13	SYS_JTMS-SWDIO	
+24	PA14	SYS_JTCK-SWCLK	
+25	PA15	I2C1_SCL	
+26	PB3*	SYS_JTDO-SWO	
+30	PB7	I2C1_SDA	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : Battery_e-load
+Project Folder : C:\Users\adamiens\STM32CubeIDE\workspace_1.0.2\Battery_e-load
+Toolchain / IDE : STM32CubeIDE
+Firmware Package Name and Version : STM32Cube FW_G4 V1.1.0
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
